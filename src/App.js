@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import NavBar from './components/navBar'
-import Counters from './components/counters'
+import NavBar from './components/NavBar'
+import PatientsList from './components/PatientsList'
 
 class App extends Component{
   state = {
@@ -11,7 +11,7 @@ render(){
   return (
     <React.Fragment>  
     <NavBar value = {this.state.value.length}/>
-    <Counters />
+    <PatientsList />
     </React.Fragment>
   );
 }
